@@ -22,9 +22,14 @@
             <div class="card-header">Register Form</div>
             <div class="card-body">
                 <form action="/auth/register" method="POST">
+                    
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name">
+                        <label for="fname"><b>First Name</b></label>
+                        <input type="text" placeholder="Enter Fname" name="fname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname"><b>Last Name</b></label>
+                        <input type="text" placeholder="Enter Lname" name="lname" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email address</label>
@@ -37,6 +42,10 @@
                     <div class="form-group">
                         <label for="passwordConfirm">Confirm Password</label>
                         <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm">
+                    </div>
+                    <div class="form-group">
+                        <label for="referrer"><b>Referrer Code</b></label>
+                        <input type="text" placeholder="Enter referrer Code" name="referrer">
                     </div>
                     <button type="submit" class="btn btn-primary">Register User</button>
                 </form>

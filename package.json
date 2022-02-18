@@ -12,12 +12,24 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "hbs": "^4.2.0",
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "shortid": "^2.2.16",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.4",
+    "@babel/preset-env": "^7.16.11",
+    "babel-cli": "^6.26.0",
+    "babel-node": "^0.0.1-security",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
   }
 }

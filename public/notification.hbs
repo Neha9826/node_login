@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Notification</title>
+  <script src="http://localhost:5000/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <br><br><br><br>
+  <script>
+
+      const socket=io.connect("http://localhost:5000")
+
+      socket.on('connect',(err,res)=>{
+        // if(err) console.log(err)
+          console.log('socket connected')
+        })
+        socket.on('2',(msg)=>{
+            console.log(msg);
+            document.write(msg)
+     })
+  </script>
+</body>
+</html>
